@@ -20,7 +20,7 @@ def step():
     global items, n, i, j, min_idx, fase
     j += 1
 
-    if(fase == "buscar"):
+    if(fase == "buscar" and i != n):
         if(j == n):
             fase = "swap"
             return{"done": False}
